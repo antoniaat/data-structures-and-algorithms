@@ -19,6 +19,5 @@ const bubbleSort = (nums) => {
   return nums;
 };
 
-const testNumbers = [10, 5, 3, 8, 2, 6, 4, 7, 9, 1];
-const almostSorterNumbers = [5, 6, 7, 8, 1, 3, 3];
-console.log(bubbleSort(almostSorterNumbers.join(', ')));
+const almostSortedNumbers = [5, 6, 7, 8, 1, 3, 3];
+console.log(bubbleSort(almostSortedNumbers.join(', ')));
