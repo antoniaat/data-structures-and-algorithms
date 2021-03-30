@@ -1,5 +1,4 @@
 const bubbleSort = (nums) => {
-  const sortedNums = nums;
   let swapped = false;
 
   do {
@@ -10,14 +9,14 @@ const bubbleSort = (nums) => {
       const nextNum = nums[index + 1];
 
       if (currentNum > nextNum) {
-        sortedNums[index] = nextNum;
-        sortedNums[index + 1] = currentNum;
+        nums[index] = nextNum;
+        nums[index + 1] = currentNum;
         swapped = true;
       }
     }
   } while (swapped);
 
-  return sortedNums;
+  return nums;
 };
 
 const testNumbers = [10, 5, 3, 8, 2, 6, 4, 7, 9, 1];
